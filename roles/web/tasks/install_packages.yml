@@ -1,0 +1,9 @@
+---
+- name: Install packages
+  ansible.builtin.apt:
+    pkg:
+    - apache2
+    - git
+    - ufw
+    - python3-venv
+    - python3-pip
