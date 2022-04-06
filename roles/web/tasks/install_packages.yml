@@ -2,15 +2,17 @@
 - name: Ensuring apt dependencies are installed
   ansible.builtin.apt:
     pkg:
-    - apache2
-    - apache2-dev
-    - git
-    - ufw
-    - python3-venv
-    - python3-pip
+      - apache2
+      - apache2-dev
+      - git
+      - ufw
+      - python3-venv
+      - python3-pip
 
-- name: Installing Django
+- name: Ensuring Python dependencies
   ansible.builtin.pip:
-    name: 
-    - Django
-    - mod_wsgi
+    name:
+      - Django
+      - mod_wsgi
+      - pipenv
+      - python3-psycopg2
