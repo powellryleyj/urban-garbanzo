@@ -1,5 +1,5 @@
 [local]
-localhost ansible_connection=local
+the_node ansible_connection=local ansible_host=powellryleyj_pc ansible_user=powellryleyj ansible_password=deadspace ansible_become=yes ansible_become_password=deadspace
 
 [webservers]
 powellryleyjpi.local ansible_ssh_user=powellr

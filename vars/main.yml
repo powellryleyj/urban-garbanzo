@@ -1,0 +1,5 @@
+postgresql_databases:
+  - name: battleship_db
+postgresql_users:
+  - name: battleship_user
+    password: superdupersecure
